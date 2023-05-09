@@ -12,10 +12,6 @@
     .flex {
         grid-template-columns: repeat(1 , 1fr);
     }
-    .card {
-        width: 300px;
-        height: 200px;
-    }
 }
 .card {
     position: relative;
@@ -24,6 +20,12 @@
     background-color: #000;
     overflow: hidden;
     cursor: pointer;
+}
+@media (max-width: 480px) {
+    .card {
+        width: 300px;
+        height: 200px;
+    }
 }
 .card-image {
     height: 100%;
